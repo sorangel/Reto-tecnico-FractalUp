@@ -1,0 +1,74 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+
+  label {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: white;
+    padding: 10px 90px 10px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+    rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px,
+    rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+    input {
+      background: none;
+      border: none;
+      width: 100%;
+      height: 100%;
+      outline: none;
+      transition: all linear 80ms;
+      padding: 4px;
+
+      &.active {
+        border-bottom: 2px solid rgba(50, 135, 195, 1);
+      }
+    }
+
+    .search-button {
+      padding: 5px;
+      border: none;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      position: absolute;
+      right: 2.5px;
+      top: 2.5px;
+      height: calc(100% - 5px);
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(50, 135, 195, 1);
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+
+      &, & * {
+        transition: all linear 100ms;
+      }
+
+      &:hover {
+        background: rgba(90, 159, 207, 1);
+        transform: scale(0.95);
+      }
+
+      &:active {
+        background: rgba(50, 135, 195, 1);
+        transform: scale(0.85);
+        transition: all linear 60ms;
+      }
+
+      .icon {
+        font-size: 1rem;
+        margin: 0 3px 0 0;
+      }
+    }
+  }
+}

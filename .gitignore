@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# .env Files
+# loaded in all cases
+.env
+# loaded in all cases, ignored by git
+.env.local
+# only loaded in specified mode
+.env.[mode]
+# only loaded in specified mode, ignored by git
+.env.[mode].local
